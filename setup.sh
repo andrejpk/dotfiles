@@ -8,3 +8,10 @@ done
 if (GOPATH) then
   go get -u github.com/justjanne/powerline-go
 fi
+
+# vim plugged
+vim -c :PlugInstall -c :q! -c :q!
+
+# ycm 
+python3 ~/.vim/plugged/youcompleteme/install.py
+
