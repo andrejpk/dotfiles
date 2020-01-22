@@ -4,8 +4,13 @@ if ! [[ "$file" =~ ^(.git|media|setup.sh|remote-setup.sh|setup-corp-ad-ctc.sh|se
 fi
 done
 
+# install go
+if [ -z $GOPATH ]; then
+	wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+fi
+
 # install powerline go
-if (GOPATH) then
+if [ -z $GOPATH ]; then
   go get -u github.com/justjanne/powerline-go
 fi
 
