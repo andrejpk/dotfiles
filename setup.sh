@@ -3,3 +3,8 @@ if ! [[ "$file" =~ ^(.git|media|setup.sh|remote-setup.sh|setup-corp-ad-ctc.sh|se
 	ln -sf $PWD/$file $HOME/
 fi
 done
+
+# install powerline go
+if (GOPATH) then
+  go get -u github.com/justjanne/powerline-go
+fi
