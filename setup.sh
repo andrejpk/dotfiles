@@ -21,5 +21,6 @@ vim -c :PlugInstall -c :q! -c :q!
 python3 ~/.vim/plugged/youcompleteme/install.py
 
 # Azure CLI
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-
+if !hash az 2>/dev/null; then
+     	curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+fi
