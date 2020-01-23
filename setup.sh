@@ -6,12 +6,14 @@ done
 
 # install go
 if [ -z $GOPATH ]; then
+	echo Installing Go
 	wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
 fi
 
 # install powerline go
 if [ -z $GOPATH ]; then
-  go get -u github.com/justjanne/powerline-go
+	echo Installing Powerline Go
+	go get -u github.com/justjanne/powerline-go
 fi
 
 # vim plugged
@@ -23,5 +25,6 @@ python3 ~/.vim/plugged/youcompleteme/install.py
 
 # Azure CLI
 if !hash az 2>/dev/null; then
+	echo Installing Azure CLI
      	curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 fi
