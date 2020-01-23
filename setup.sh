@@ -15,6 +15,7 @@ if [ -z $GOPATH ]; then
 fi
 
 # vim plugged
+sudo apt-get install cmake -y
 vim -c :PlugInstall -c :q! -c :q!
 
 # ycm 
