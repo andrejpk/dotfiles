@@ -5,9 +5,11 @@ fi
 done
 
 # install go
-if [ -z $GOPATH ]; then
+if ! [ -z $GOPATH ]; then
 	echo Installing Go
 	wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+else
+	echo Go aleady installed
 fi
 
 # install powerline go
