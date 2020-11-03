@@ -10,8 +10,13 @@ Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'valloric/youcompleteme'
 Plug 'scrooloose/nerdtree'
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'easymotion/vim-easymotion'
 
 syntax on
 set number
@@ -53,3 +58,6 @@ endif
 syntax on
 colorscheme onedark
 set laststatus=2
+set tabstop=2
+set expandtab
+set relativenumber
