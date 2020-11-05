@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'scrooloose/nerdtree'
 "Plug 'itchyny/lightline.vim'
 Plug 'leafgarland/typescript-vim'
@@ -17,6 +17,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 syntax on
 set number
@@ -61,3 +62,5 @@ set laststatus=2
 set tabstop=2
 set expandtab
 set relativenumber
+
+:imap jj <Esc>
